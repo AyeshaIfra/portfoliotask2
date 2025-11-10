@@ -1,0 +1,199 @@
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <nav>
+    <div class="logo">D</div>
+    <ul>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Works</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+  <header>
+    <div class="intro">
+      <img src="your-photo.jpg" alt="Your Photo" class="profile-pic"/>
+      <div>
+        <h1>Carlos Mendoza</h1>
+        <p>Product Designer and Developer, based in California.</p>
+        <p class="bio">I create web experiences focused on clean design and effective solutions for businesses worldwide.</p>
+        <a href="#" class="btn-main">My story</a>
+      </div>
+    </div>
+  </header>
+  <section class="stats">
+    <div>
+      <h3>Any Type Of Query & Discussion.</h3>
+      <p>Email or contact me for work opportunities or freelance projects.</p>
+      <a href="mailto:your.email@example.com">your.email@example.com</a>
+    </div>
+    <div>
+      <h2>14</h2>
+      <span>Years experience</span>
+    </div>
+    <div>
+      <h2>187</h2>
+      <span>Completed Projects</span>
+    </div>
+  </section>
+  <section class="services">
+    <div class="card product">Product Designer</div>
+    <div class="card branding">Branding Designer</div>
+    <div class="card developer">Full Stack Developer</div>
+  </section>
+  <section class="portfolio">
+    <h2>Selected Works</h2>
+    <div class="work-grid">
+      <div class="work-card">Project 1</div>
+      <div class="work-card">Project 2</div>
+      <div class="work-card">Project 3</div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Carlos Mendoza. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+[1:16 pm, 27/10/2025] alhamdulillah😇: body {
+  background: #23242b;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 8vw;
+}
+.logo {
+  background: #ffbf2a;
+  color: #23242b;
+  padding: 12px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 2rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav a:hover {
+  color: #fff;
+}
+header .intro {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 48px 8vw 0 8vw;
+}
+.profile-pic {
+  width: 180px;
+  border-radius: 16px;
+}
+header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+header .bio {
+  color: #bdbdbd;
+  margin-top: 8px;
+}
+.btn-main {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ffbf2a;
+  color: #23242b;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn-main:hover {
+  background: #fbbf24;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  background: #20212a;
+  padding: 40px 8vw;
+  margin-top: 40px;
+}
+.stats > div {
+  text-align: center;
+}
+.stats h2 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #ffbf2a;
+}
+.services {
+  display: flex;
+  gap: 16px;
+  margin: 48px 8vw;
+}
+.card {
+  flex: 1;
+  padding: 48px 0;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  text-align: center;
+  background: #34354b;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+.card.product {
+  background: #ffbf2a;
+  color: #23242b;
+}
+.card:hover {
+  background: #ffbf2a;
+  color: #23242b;
+}
+.portfolio {
+  margin: 48px 8vw 40px 8vw;
+}
+.portfolio h2 {
+  margin-bottom: 24px;
+}
+.work-grid {
+  display: flex;
+  gap: 16px;
+}
+.work-card {
+  flex: 1;
+  height: 180px;
+  background: #292a36;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bdbdbd;
+  font-size: 1.2rem;
+}
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background: #191820;
+  color: #999;
+  font-size: 1rem;
+}
+@media (max-width: 900px) {
+  .header .intro, .stats, .services, .work-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
